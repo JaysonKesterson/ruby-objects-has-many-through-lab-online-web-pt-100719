@@ -1,4 +1,4 @@
-class Genre
+class Appointment
   
   attr_accessor :songs
   attr_reader :name
