@@ -1,6 +1,6 @@
 def Artist
   
-  attr_accessor :name, :songs
+  attr_accessor :songs
   @@all = []
   
   def initialize(name)
