@@ -1,6 +1,6 @@
-class Song
+class Patient
   
-  attr_accessor :artist, :genre
+  attr_accessor :doctor, :appointment, :name
   @@all =[]
   
   def initialize(name,artist,genre)
