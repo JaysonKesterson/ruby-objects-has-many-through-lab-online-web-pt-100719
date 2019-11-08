@@ -1,6 +1,6 @@
-class Artist
+class Doctor
   
-  attr_accessor :songs, :genre
+  attr_accessor :patients, :appointments
   attr_reader :name
   @@all = []
   
@@ -13,7 +13,7 @@ class Artist
     @@all
   end
   
-  def new_song(name,genre)
+  def new_appointment(patient,date)
     Song.new(name,self,genre)
   end
   
