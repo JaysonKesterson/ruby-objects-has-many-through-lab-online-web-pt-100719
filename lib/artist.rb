@@ -18,14 +18,14 @@ class Artist
   end
   
   def songs
-    Song.all.collect do |song|
+    Song.all.select do |song|
       song.artist == self
     end
   end
   
   def genres
-    self.songs.select do |song|
-      song
+    self.songs.collect do |song|
+      song.genre
     end
   end
   
